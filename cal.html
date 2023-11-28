@@ -1,46 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        form{
-            border:2px solid black;
-            padding: 20px;
-            width:20%;
-            background-color:lightblue;
-        }
-    </style>
+     
 </head>
-
 <body>
-    <form action="">
-        <label for="entry1">A:</label><input type="text" name="" id="a" placeholder="Enter first number"><br><br>
-        <label for="entry2">B:</label><input type="text" name="" id="b" placeholder="Enter second number"><br><br>
-        <input type="button" value="ADD" onclick="add(p,q)"> &nbsp;
-        <input type="button" value="SUB" onclick="alert(5)">&nbsp;
-        <input type="button" value="MUL" onclick=alert(10)>&nbsp;
-        <input type="button" value="DIV" onclick="alert(2)">
-    </form>
-    <script>
-        let p = Integer.getElementById("a");
-        let q = Integer.document.getElementById("b");
-        function add(aval,bval){
-            return(aval + bval);
-        }
-        function sub(aval,bval){
-            return(aval - bval);
-        }
-        function mul(aval,bval){
-            return(aval * bval);
-        }
-        function div(aval,bval){
-            return(aval / bval);
-        }
-      
-    </script>
-</body>
+    <div class= "formstyle">  
+        <form name = "form1">  
+              
+            
+          <input id = "calc" type ="text" name = "answer"> <br> <br>  
+          
+          <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+          <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+          <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+           <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">  
+          <br> <br>  
+            
+          <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+          <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+          <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+          <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">  
+          <br> <br>  
+            
+          <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+          <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+          <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+          <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">  
+          <br> <br>  
+            
+            
+          <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">  
+          <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+            <input type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+           
+          <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">  
+          <br>   
 
+
+
+<style>
+
+
+  
+.formstyle  
+{  
+width: 300px;  
+height: 530px;  
+margin: auto;  
+border: 3px solid skyblue;  
+border-radius: 5px;  
+padding: 20px;  
+}  
+  
+  
+  
+  
+input  
+{  
+width: 20px;  
+background-color:lightcyan;  
+color: rgb(12, 11, 11);  
+border: 3px solid rgb(17, 14, 14);  
+    border-radius: 5px;  
+    padding: 26px;  
+    margin: 5px;  
+    font-size: 15px;  
+}  
+  
+  
+#calc{  
+width: 250px;  
+border: 5px solid black;  
+    border-radius: 3px;  
+    padding: 20px;  
+    margin: auto;  
+}  
+  
+</style>  
+            
+        </form>  
+        </div>  
+</body>
 </html>
