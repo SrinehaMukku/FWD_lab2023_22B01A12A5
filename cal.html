@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border:2px solid black;
+            padding: 20px;
+            width:20%;
+            background-color:lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="entry1">A:</label><input type="text" name="" id="a" placeholder="Enter first number"><br><br>
+        <label for="entry2">B:</label><input type="text" name="" id="b" placeholder="Enter second number"><br><br>
+        <input type="button" value="ADD" onclick="add(p,q)"> &nbsp;
+        <input type="button" value="SUB" onclick="alert(5)">&nbsp;
+        <input type="button" value="MUL" onclick=alert(10)>&nbsp;
+        <input type="button" value="DIV" onclick="alert(2)">
+    </form>
+    <script>
+        let p = Integer.getElementById("a");
+        let q = Integer.document.getElementById("b");
+        function add(aval,bval){
+            return(aval + bval);
+        }
+        function sub(aval,bval){
+            return(aval - bval);
+        }
+        function mul(aval,bval){
+            return(aval * bval);
+        }
+        function div(aval,bval){
+            return(aval / bval);
+        }
+      
+    </script>
+</body>
+
+</html>
